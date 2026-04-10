@@ -15,12 +15,14 @@ Works exactly like Win + D does **plus additional features**:
 2. Create task in Task Scheduler:  
 - Specify path to *ShowDesktopOneMonitor.exe*
 - Trigger: *Run only when user is logged on*
-- Check *Run with highest priveleges*
+- *Run with highest privileges* is no longer required for this build
 - On *Settings* tab make sure that task will not be stopped after running longer than some days, for example.  
 Note: program has icon in tray, but unfortunatelly it is invisible, if app is started from Task Scheduler :(
 
 ## Usage
-Press key combination: *Left Windows Key + Left Shift + D* to minimize/restore windows **on monitor where cursor is currently on**.
+Press key combination: *Win + D* to minimize/restore windows **on monitor where cursor is currently on**.
+
+This custom build intercepts the default shell shortcut and applies it only to the monitor under the mouse cursor.
 
 ## Credits
 In core of the project is @FrigoCoder's code: https://github.com/FrigoCoder/FrigoTab  

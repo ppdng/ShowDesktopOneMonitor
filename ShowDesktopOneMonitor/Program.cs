@@ -1,8 +1,4 @@
-﻿using FrigoTab;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ShowDesktopOneMonitor
@@ -15,9 +11,10 @@ namespace ShowDesktopOneMonitor
         [STAThread]
         static void Main ()
         {
+            DpiAwarenessHelper.Enable();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            
+
             Application.Run(new MainAppContext());
         }
     }

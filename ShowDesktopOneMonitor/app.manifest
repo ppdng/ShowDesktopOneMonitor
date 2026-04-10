@@ -16,8 +16,7 @@
             Удалите этот элемент, если виртуализация требуется приложению для обратной
             совместимости.
         -->
-        <!--<requestedExecutionLevel level="asInvoker" uiAccess="false" />-->
-        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
   </trustInfo>
@@ -40,8 +39,8 @@
       <!-- Windows 8.1 -->
       <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
 
-      <!-- Windows 10 -->
-      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+      <!-- Windows 10 / Windows 11 -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
 
     </application>
   </compatibility>
@@ -50,13 +49,12 @@
        значениях DPI. Приложения Windows Presentation Foundation (WPF) по умолчанию поддерживают определение DPI, им не нужно 
        специально включать параметр для этого. Для приложений Windows Forms на платформе .NET Framework 4.6, для которых задан этот параметр, необходимо 
        также задать для "EnableWindowsFormsHighDpiAutoResizing" значение "true" в файле app.config.-->
-  <!--
   <application xmlns="urn:schemas-microsoft-com:asm.v3">
     <windowsSettings>
-      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>
+      <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true/pm</dpiAware>
+      <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitorV2</dpiAwareness>
     </windowsSettings>
   </application>
-  -->
 
   <!-- Включите темы для общих элементов управления и диалоговых окон Windows (Windows XP и более поздние версии) -->
   <!--

@@ -40,7 +40,6 @@ namespace ShowDesktopOneMonitor.Properties {
         [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
 <ArrayOfKeyModifiers xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
   <KeyModifiers>Windows</KeyModifiers>
-  <KeyModifiers>Shift</KeyModifiers>
 </ArrayOfKeyModifiers>")]
         public ShowDesktopOneMonitor.KeyModifiers[] KeyModifiers {
             get {
