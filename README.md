@@ -10,8 +10,9 @@ Works exactly like Win + D does **plus additional features**:
 - Minimizes/Restores only windows on specific monitor, remembering their states
 
 ## Installation
-1. Download and extract archive somewhere  
-*See Releases section: https://github.com/ruzrobert/ShowDesktopOneMonitor/releases*
+1. Download and extract the latest custom release archive somewhere convenient.  
+*Recommended asset name: `ShowDesktopOneMonitor-Win11-Custom-v2026.04.11.1.zip`*
+*See Releases section in your fork*
 2. Create task in Task Scheduler:  
 - Specify path to *ShowDesktopOneMonitor.exe*
 - Trigger: *Run only when user is logged on*
